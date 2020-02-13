@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Secure form</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+</head>
+<body>
+    <nav class="buttons">
+    <a href="index.html" class="btn">Create account</a>
+    <a href="login.html" class="btn">Login</a>
+    </nav>
+    
+    <form action="" method="post" id="login" class="Form">
+        <p class="tittle">Login</p>
+        <div class="interior">
+            <input type="email" placeholder="E-mail" class="sameSize" id="email">
+            <hr>
+            <input type="password" placeholder="Password" class="sameSize" id="password">
+            <hr>
+            <div class="createAccount">
+            <input type="submit" class="submit" value="login" onclick="login();">
+                </div>
+            <hr>
+        </div>
+    </form>
+    <hr>
+    <footer>
+        <hr>
+        <p class="description">* Protecting forms deleting special characters from the inputs and trying to avoid "blank users" that may join to the system without crdentials</p>
+    <hr></footer>
+    <script src='js/Login.js'></script>
+</body>
+</html> 

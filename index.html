@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Secure form</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+</head>
+<body>
+    <nav class="buttons">
+    <a href="index.html" class="btn">Create account</a>
+    <a href="login.html" class="btn">Login</a>
+    </nav>
+    
+    <form action="" method="post" id="newAccount" class="Form">
+        <p class="tittle">Create account</p>
+        
+        <div class="interior">
+        <div class="juntos">
+            <input type="text" placeholder="Name" class="name" id="name">
+            <input type="text" placeholder="Last Name" class="lastName" id="lastName"></div>
+            <hr>
+            <input type="email" placeholder="E-mail" class="sameSize" id="email">
+            <hr>
+            <input type="password" placeholder="Password" class="sameSize" id="password">
+            <hr>
+            <div class="geners">
+            <input type="radio" class="gener" id="man" value="man" name="man" onclick="purificar();">Hombre
+            <input type="radio" class="gener" id="woman" value="woman" name="woman" onclick="purificar();">Mujer
+            <input type="radio" class="gener" id="binary" value="binary" name="binary" onclick="purificar();">No binary
+                </div>
+            <hr>
+            <div class="createAccount">
+            <input type="checkbox" id="checkbox"> I accept the terms and conditions redacted <a href="#">here</a>
+            <hr>
+            <input type="submit" class="submit" value="Create account" onclick="createAccount();">
+                </div>
+            <hr>
+        </div>
+    </form>
+    <hr>
+    <footer>
+        <hr>
+        <p class="description">* Protecting forms deleting special characters from the inputs and trying to avoid "blank users" that may join to the system without crdentials</p>
+    <hr></footer>
+	<script src='js/CreateAccount.js'></script>
+    <script src='js/RadioBTN.js'></script>
+</body>
+</html> 
